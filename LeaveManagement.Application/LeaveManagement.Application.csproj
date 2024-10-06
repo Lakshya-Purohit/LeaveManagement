@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Faetures\LeaveAllocation\Handler\Commands\" />
+    <Folder Include="Faetures\LeaveAllocation\Handler\Queries\" />
+    <Folder Include="Faetures\LeaveAllocation\Requests\Commands\" />
+    <Folder Include="Faetures\LeaveAllocation\Requests\Queries\" />
+    <Folder Include="Faetures\LeaveRequest\Handler\Commands\" />
+    <Folder Include="Faetures\LeaveRequest\Handler\Queries\" />
+    <Folder Include="Faetures\LeaveRequest\Requests\Commands\" />
+    <Folder Include="Faetures\LeaveRequest\Requests\Queries\" />
+    <Folder Include="Faetures\LeaveType\Handler\Commands\" />
+    <Folder Include="Faetures\LeaveType\Requests\Commands\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LeaveManagement.Domain\LeaveManagement.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
